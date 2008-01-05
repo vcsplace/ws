@@ -4,7 +4,7 @@ script="$dir/reposman/reposman.pl"
 
 
 if [ -z "$*" ] ; then
-	exec "$script" --checkout perl libmyplace-perl shellscript babebase firefox websaver2 gm_scripts ws
+	exec "$script" --checkout perl libmyplace-perl shellscript babebase firefox websaver2 gm-scripts ws
 elif [ "$1" = "all" ] ; then
 	exec "$script" --checkout 
 else
