@@ -1,3 +1,13 @@
 #!/bin/sh
 dir=`dirname "$0"`
-exec "$dir/reposman/reposman.pl" --checkout "$@"
+script="$dir/reposman/reposman.pl"
+
+
+if [ -z "$@" ] ; then
+	exec "$script" --checkout zscripts/perl zscripts/libmyplace-perl zscripts/sh babebase ffprofile websaver2 gm_scripts vcsplace/ws
+elif [ "$1"=="all" ] ; then
+	exec "$script" --checkout 
+else
+	exec "$script" --checkout "$@"
+fi
+
