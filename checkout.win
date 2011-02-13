@@ -1,0 +1,18 @@
+#!/bin/sh
+dir=`dirname "$0"`
+script="$dir/reposman/reposman.pl"
+
+p="$p reposman"
+p="$p ws"
+p="$p perl"
+p="$p libmyplace-perl"
+p="$p shellscript"
+p="$p babebase"
+p="$p firefox"
+p="$p websaver2"
+p="$p gm-scripts"
+p="$p loseplace"
+p="$p homebase"
+
+exec "$script" --checkout "$@" $p 
+
