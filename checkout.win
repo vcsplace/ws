@@ -14,7 +14,8 @@ p="$p babebase"
 p="$p firefox"
 p="$p websaver2"
 p="$p gm-scripts"
-p="$p loseplace"
+p="$p loseplace/mini:loseplace"
+p="$p loseplace/core:loseplace"
 p="$p homebase"
 
 exec "$script" --checkout "$@" $p 
